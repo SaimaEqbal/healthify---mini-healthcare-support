@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthify - Healthcare Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Healthify - Healthcare Support</h1>
+
+    <div class="container">
+
+        <h2>Patient Support Form</h2>
+        <form id="patientForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <textarea id="issue" placeholder="Describe your issue" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="summary"></div>
+
+        <hr>
+
+        <h2>Volunteer Registration</h2>
+        <form id="volunteerForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <hr>
+
+        <h2>Healthcare FAQ Chatbot</h2>
+        <div class="chatbox">
+            <input type="text" id="chatInput" placeholder="Ask about services...">
+            <button onclick="chatbot()">Ask</button>
+            <p id="chatResponse"></p>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
